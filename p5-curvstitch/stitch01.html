@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Canvas Delirium - Huit paraboles dans un carré</title>
+        <link href="../vendor/twitter/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/jquery-1.12.0.js"><\/script>')</script>
+        <script src="../vendor/twitter/bootstrap/dist/js/bootstrap.min.js"></script>
+    </head>
+<div class="container">
+    <br><br>
+    <div class="page-header">
+        <h2>Huit paraboles dans un carré</h2>
+    </div>
+    <p>J'ai tiré cet exemple du livre de John Millington : "Curve Stitching, The art of sewing beautiful mathematical patterns" (Tarquin Publications).</p>
+    <p>Le code original était écrit en QBASIC, je l'ai réécit pour P5.js, en ajoutant les touches ci-dessous.</p>
+    <p>A notre que j'avais fait quelques erreurs dans les premières versions de mon code sous P5.js. J'ai conservé
+    l'un de ces accidents, que j'ai trouvé amusant, vous pouvez l'afficher en cliquant <a href="stitch01_accident.html">ici</a> </p>
+    <h3>Touches associées au générateur de graphe </h3>
+    <ul><li>X = Arrêt/Redémarrage de l'animation</li>
+        <li>S = Sauvegarde du graphe en cours</li>
+    </ul>
+    <p>Deux modes d'affichage possibles :
+    <ul><li>l'affichage 1 simule une sorte de morphing en partant d'un graphe à un seul segment, pour aller
+        progressivement vers un graphe composé de 40 segments. On repart ensuite dans un cycle inverse (de 40 à 1),
+        avant de repartir dans un nouveau cycle. </li>
+        <li>Dans le tracé progressif de l'affichage 2, on
+    stoppe l'incrémentation du nombre de segments, et on redessine la forme en cours, segment
+    par segment, ce qui permet de mieux comprendre comment fonctionne l'algorithme
+    effectuant le tracé. A la fin de l'animation, l'image se fige, ce qui laisse de la
+        sauvegarder si on le souhaite (via la touche S) et on peut relancer l'animation
+        en pressant 2 fois la touche X.</li></ul></p>
+</div>
+<script language="javascript" src="../vendor/p5.js"></script>
+<script language="javascript" src="../vendor/addons/p5.dom.js"></script>
+<script language="javascript" src="stitch01.js"></script>
+</body>
+</html>
